@@ -15,7 +15,9 @@ class String
     # scissors beats rock (false)
     # paper beat scissors (false)
 
-    if player == "rock" && opponent == "scissors"
+    if player == opponent
+      game_result = "tie"
+    elsif player == "rock" && opponent == "scissors"
       game_result = "true"
     elsif player == "scissors" && opponent == "paper"
         game_result = "true"
