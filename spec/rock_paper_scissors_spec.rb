@@ -8,7 +8,7 @@ describe("Rock, paper, scissors") do
   end
 
   it("returns false if scissors is the object and rock is the argument") do
-    expect(("scissors").beats("rock")).to(eq("Scissors Wins!"))
+    expect(("scissors").beats("rock")).to(eq("Rock Wins!"))
   end
 
   it("returns 'tie' if object and argument are equal") do

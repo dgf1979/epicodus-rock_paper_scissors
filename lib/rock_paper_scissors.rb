@@ -20,19 +20,25 @@ class String
     # paper beat scissors (false)
 
     if player == opponent
-      game_result = "tie"
+      game_result = "Tie!"
+
     elsif player == "rock" && opponent == "scissors"
-      game_result = "true"
+      game_result = "Rock Wins!"
+
     elsif player == "scissors" && opponent == "paper"
-        game_result = "true"
+      game_result = "Scissors Wins!"
+
     elsif player == "paper" && opponent == "rock"
-      game_result = "true"
+      game_result = "Paper Wins!"
+
     elsif player == "rock" && opponent == "paper"
-      game_result = "false"
+      game_result = "Paper Wins!"
+
     elsif player == "scissors" && opponent == "rock"
-      game_result = "false"
+      game_result = "Rock Wins!"
+
     elsif player == "paper" && opponent == "scissors"
-      game_result = "false"
+      game_result = "Scissors Wins!"
     end
 
     game_result
