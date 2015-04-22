@@ -3,6 +3,10 @@ class String
     player = self
     game_result = ""
 
+    #hand uppercase
+    player.downcase!()
+    opponent.downcase!()
+
     # possible combos
     #
     # player == opponent (tie)
