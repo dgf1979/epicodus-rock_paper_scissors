@@ -15,4 +15,8 @@ describe("Rock, paper, scissors") do
     expect(("scissors").beats("scissors")).to(eq("tie"))
   end
 
+  it("functions if capitalized words or letters are input") do
+    expect(("SCISSORS").beats("scissors")).to(eq("tie"))
+  end
+
 end
