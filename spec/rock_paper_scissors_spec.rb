@@ -7,5 +7,8 @@ describe("Rock, paper, scissors") do
     expect(("rock").beats("scissors")).to(eq("true"))
   end
 
+  it("returns false if scissors is the object and rock is the argument") do
+    expect(("scissors").beats("rock")).to(eq("false"))
+  end
 
 end
