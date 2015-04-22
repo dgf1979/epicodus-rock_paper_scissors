@@ -11,4 +11,8 @@ describe("Rock, paper, scissors") do
     expect(("scissors").beats("rock")).to(eq("false"))
   end
 
+  it("returns 'tie' if object and argument are equal") do
+    expect(("scissors").beats("scissors")).to(eq("tie"))
+  end
+
 end
