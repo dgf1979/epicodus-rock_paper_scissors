@@ -1,10 +1,10 @@
 class String
-  define_method(:beats?) do |opponent|
+  define_method(:beats) do |opponent|
     player = self
-    game_result = false
+    game_result = ""
 
     if player == "rock" && opponent == "scissors"
-      game_result = true
+      game_result = "true"
     end
 
     game_result
